@@ -21,11 +21,10 @@ router.get('/about',function(req,res){
   res.sendFile(path.join(__dirname+'/about.html'));
 });
 
-//add the router
-app.use('/', router); 
+//add the router 
 app.use('/', router);
 app.listen(3007);
-console.log('Your Node Server is listening on '+app.get('port')); 
+console.log('Your Node Server is listening on port 3007'); 
 /*
 app.listen(app.get('port'),  err => {
     if (err) {
