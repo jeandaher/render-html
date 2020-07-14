@@ -12,6 +12,9 @@ router.get('/',function(req,res){
 router.get('/login',function(req,res){
   res.sendFile(path.join(__dirname+'/login.html')); 
 }); 
+router.get('/login1',function(req,res){
+  res.sendFile(path.join(__dirname+'/login1.html')); 
+}); 
 
 router.get('/form',function(req,res){
     res.sendFile(path.join(__dirname+'/form.html'));
